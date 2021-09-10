@@ -1,0 +1,74 @@
+<HTML>
+<Head>
+<Title>
+Coding projects
+</Title>
+<script language="javascript">
+
+
+function Greeting ()
+{
+alert ("Hello");
+}
+
+function Greeting1 ()
+{
+var name = prompt ("input your name"); 
+alert ("Hello there "+name);
+}
+
+
+function Greeting2()
+{
+	var name = confirm("Do you like my site?"); // = is the assignment operator
+	alert(name);
+}
+
+function Guessing3()
+{
+	var usersGuess  = 0;
+	var numOfGuesses = -1;
+	var rand = Math.random()*10+1;
+	rand = parseInt(rand);
+	
+	while (rand != usersGuess  )
+	
+	{
+		usersGuess = prompt ("Guess what the number will be, 1-10");
+		numOfGuesses = numOfGuesses + 1;
+		if (usersGuess < rand)
+		{
+			alert ("Try a higher guess next time"); 
+		}
+		else if (usersGuess > rand)
+		{
+			alert ("Try a lower guess next time");
+		}
+
+	}
+alert ("you got it in "+numOfGuess+" guesses");
+
+	
+}
+
+</script>
+</Head>
+<Body background="images/bg1.gif">
+<font color="white" face="Comic Sans MS" align="center">
+<h1><b><i>
+AP CS Projects-My javascript page
+</i></b></h1>
+<br/>
+</font>
+<font face="ariel" align="center" color="white">
+<input type="button" value="Hello" onclick="Greeting()">
+<hr/>
+<input type="button" value="Question" onclick="Greeting1()">
+<hr/>
+<input type="button" value="Confirmation" onclick="Greeting2()">
+<hr/>
+<input type="button" value="Guessing game" onclick="Guessing3()">
+
+<a href="index.html" style="color:red"> back </a>
+</Body>
+</HTML>
