@@ -1,0 +1,47 @@
+<html>
+<head>
+<script language="javaScript">
+
+var counter = 0;  // Global variable. Access throughout this script. 
+
+var bandMates = ["Reyna", "Pheonix", "Kayo", "Sky", "Sage", "Jet", "Killjoy", "Sova", " Raze"];
+
+var myData=[1,2,3,4,5,6,7,8,9,10];
+
+
+function oneTime()
+{
+	//alert (bandMates[counter]);
+	
+	
+	
+	document.getElementById("result").value = bandMates[counter];
+	
+
+incermentCounter();
+} 
+
+function incermentCounter()
+{
+	if (counter == bandMates.length-1)
+	{
+	counter = 0
+	}
+	else
+	{
+	counter = counter + 1
+	}
+}
+
+</script>
+</head>
+<body>
+<center>
+<h1> Fun with Arrays</h1>
+<input type="button" value="One Click" onclick="oneTime()"/>
+<br/><br/>
+
+<input type="text" value="Run" id="result"/>
+<br/><br/>
+</body>
+</html>
